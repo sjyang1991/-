@@ -1,6 +1,8 @@
-TELEGRAM_TOKEN = '1106010989:AAHD8sGEiZWMowxH7uS9xULmeCdAB6xKsyw'
-CHAT_ID = '822068706'
-CRAWLING_URL = "https://t.me/s/pogba9981"
+import os
+
+#TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN', '')
+#CHAT_ID = os.environ.get('CHAT_ID', '')
+#CRAWLING_URL = os.environ.get('CRAWLING_URL', '')
 
 if not TELEGRAM_TOKEN or not CHAT_ID or not CRAWLING_URL:
     raise Exception('TELEGRAM_TOKEN, CAHT_ID, URL 확인 필요')
